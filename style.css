@@ -50,28 +50,57 @@
     text-align: left;
 }
 
-
 /* Services Section */
+.services {
+    padding: 50px 0;
+}
+
+.services-cards{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+}
+
 .shadow-container {
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
 }
+
 .shadow-container:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 .card {
     transition: transform 0.3s ease;
+    height: auto;
 }
+
+.service-image {
+    padding: 50px;
+}
+
 .card:hover {
-    transform: translateY(-5px);  /* Optionally elevate the card slightly on hover */
+    transform: translateY(-5px);
+    /* Optionally elevate the card slightly on hover */
 }
+
 .card-img-top {
-    width: 100%;  /* Ensures the image covers the card width */
-    height: auto; /* Keeps the image aspect ratio */
+    width: 100%;
+    /* Ensures the image covers the card width */
+    height: auto;
+    /* Keeps the image aspect ratio */
 }
+
 .card.p-5 {
-    padding: 1rem !important; /* Adjust padding inside the card to fit better */
+    padding: 1rem !important;
+    /* Adjust padding inside the card to fit better */
 }
+
 .text-decoration-none {
-    text-decoration: none; /* Ensure links have no underline */
+    text-decoration: none;
+    /* Ensure links have no underline */
 }
