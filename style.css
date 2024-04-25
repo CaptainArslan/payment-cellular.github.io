@@ -1,0 +1,77 @@
+.header {
+    background-color: var(--bs-custom-dark);
+    color: #fff;
+    text-align: center;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: var(--bs-white);
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--bs-custom-dark);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hero {
+    background-image: url('asset/hero-section-1.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+
+/* Services Section */
+.shadow-container {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+.shadow-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);  /* Optionally elevate the card slightly on hover */
+}
+.card-img-top {
+    width: 100%;  /* Ensures the image covers the card width */
+    height: auto; /* Keeps the image aspect ratio */
+}
+.card.p-5 {
+    padding: 1rem !important; /* Adjust padding inside the card to fit better */
+}
+.text-decoration-none {
+    text-decoration: none; /* Ensure links have no underline */
+}
