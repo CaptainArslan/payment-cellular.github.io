@@ -512,10 +512,10 @@ iconify-icon.social-link-icon {
   font-size: 24px;
 }
 
-iconify-icon.social-link-icon.active,
+/*iconify-icon.social-link-icon.active,
 iconify-icon.social-link-icon:hover {
   color: #D06051;
-}
+}*/
 
 
 /*--------------------------------------------------------------
@@ -647,6 +647,38 @@ iconify-icon.quote {
   margin-bottom: 20px;
 }
 
-.gap{
+.gap {
   padding: 50px 0;
+}
+
+.security .icon,
+.benefits .icon {
+  width: 80px;
+  height: 80px;
+}
+
+.security .icon img,
+.benefits .icon img {
+  width: 100%;
+}
+
+.benefits {
+  background-image: url('images/homepage/home-page-3-benefits.png');
+}
+
+.benefits .benefit {
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
+  border: 1px solid var(--bs-custom-white);
+}
+
+.footer {
+  background-image: url('images/homepage/footer.png');
+}
+
+.security-check img {
+  max-width: 100%;
+  height: auto;
+
 }
