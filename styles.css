@@ -462,6 +462,7 @@ iconify-icon.process-icon {
   --bs-accordion-border-radius: 0px;
 }
 
+
 .accordion-header {
   margin-bottom: 0;
   border-top: 1px solid var(--accent-color);
@@ -564,9 +565,18 @@ section#cta {
   width: 100%;
   height: 55px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   padding-left: 20px;
   margin-bottom: 20px;
+}
+
+.tracking button{
+  border-radius: 50px;
+}
+
+.tracking button:hover{
+  background: var(--accent-color);
+  color: var(--bs-light);
 }
 
 .gap {
