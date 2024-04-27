@@ -63,32 +63,26 @@
                             <a class="nav-link  active px-3" aria-current="page" href="javascript:void(0)">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link px-3 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Top up</a>
-                            <ul class="dropdown-menu d-none">
-                                <li>
-                                    <a href="about.html" class="dropdown-item">
-                                        <div class="dropdown-content">
-                                            <img src="https://payyourcell.com/https://payyourcell.com/assets/images/services/1690316149-home.jpg'"
-                                                alt="About" class="dropdown-img">
-                                            <span class="dropdown-name">About</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li><a href="blog.html" class="dropdown-item ">Blog </a></li>
-                                <li><a href="blog-single.html" class="dropdown-item ">Blog-Single </a></li>
-                                <li><a href="booking.html" class="dropdown-item ">Booking </a></li>
-                                <li><a href="services.html" class="dropdown-item ">Services </a></li>
-                                <li><a href="services-single.html" class="dropdown-item ">Service-Single</a></li>
-                                <li><a href="project.html" class="dropdown-item ">Project </a></li>
-                                <li><a href="project-single.html" class="dropdown-item ">Project-Single</a></li>
-                                <li><a href="pricing.html" class="dropdown-item ">Pricing </a></li>
-                                <li><a href="contact.html" class="dropdown-item ">Contact </a></li>
-                                <li><a href="team.html" class="dropdown-item ">Our Team </a></li>
-                                <li><a href="review.html" class="dropdown-item ">Reviews </a></li>
-                                <li><a href="faq.html" class="dropdown-item ">FAQs </a></li>
+                            <a class="nav-link px-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Top up
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                <li><a href="blog-single.html" class="dropdown-item">Blog-Single</a></li>
+                                <li><a href="booking.html" class="dropdown-item">Booking</a></li>
+                                <li><a href="services.html" class="dropdown-item">Services</a></li>
+                                <li><a href="services-single.html" class="dropdown-item">Service-Single</a></li>
+                                <li><a href="project.html" class="dropdown-item">Project</a></li>
+                                <li><a href="project-single.html" class="dropdown-item">Project-Single</a></li>
+                                <li><a href="pricing.html" class="dropdown-item">Pricing</a></li>
+                                <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                                <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+                                <li><a href="review.html" class="dropdown-item">Reviews</a></li>
+                                <li><a href="faq.html" class="dropdown-item">FAQs</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#services">Login </a>
                         </li>
@@ -242,8 +236,6 @@
             </div>
         </div>
     </section>
-
-
 
     <section class="tracking">
         <div class="container">
@@ -561,6 +553,21 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdown = document.querySelector('.dropdown');
+            var dropdownMenu = new bootstrap.Dropdown(dropdown.querySelector('.dropdown-toggle'));
+
+            dropdown.addEventListener('mouseenter', function () {
+                dropdownMenu.show();
+            });
+
+            dropdown.addEventListener('mouseleave', function () {
+                dropdownMenu.hide();
+            });
+        });
+
+    </script>
 
 
 </body>

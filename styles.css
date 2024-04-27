@@ -193,16 +193,16 @@ nav.navbar,
   color: var(--bs-custom-secondary);
 }
 
-.dropdown-menu {
+/*.dropdown-menu {
   min-width: 300px;
-  /* Adjust the width as needed */
+  Adjust the width as needed
   border-radius: var(--bs-dropdown-border-radius);
   display: flex;
   flex-wrap: wrap;
-}
+}*/
 
 
-.dropdown-menu li {
+/*.dropdown-menu li {
   width: 100%;
 }
 
@@ -234,6 +234,19 @@ nav.navbar,
   display: flex;
   align-items: center;
   padding: 10px 15px;
+}
+*/
+
+.dropdown-menu {
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 
@@ -592,14 +605,35 @@ section#cta {
 }
 
 .borderdiv {
-  padding: 50px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transitions for transform and shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Ensures the div behaves as expected */
+  /* For positioning the pseudo element or other content */
+}
+
+.borderdiv:hover {
+  transform: scale(1.05);
+  /* Slightly enlarges the div on hover */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  /* Adds shadow for depth */
 }
 
 .borderdiv img {
-  width: 100%;
+  width: 70%;
   height: 200px;
   object-fit: contain;
+  transition: opacity 0.3s ease;
+  /* Smooth transition for the image opacity */
+}
+
+.borderdiv:hover img {
+  opacity: 0.9;
+  /* Slightly reduces the image opacity on hover */
 }
