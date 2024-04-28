@@ -535,6 +535,7 @@ section#cta {
 .hero {
   background: url('images/homepage/hero-section-1.png') no-repeat center center/cover;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .hero .text-primary {
@@ -566,7 +567,7 @@ section#cta {
 }
 
 .gap {
-  padding: 50px 0;
+  padding: 50px 0px;
 }
 
 .security .icon,
@@ -606,30 +607,60 @@ section#cta {
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transitions for transform and shadow */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Ensures the div behaves as expected */
-  /* For positioning the pseudo element or other content */
 }
 
 .borderdiv:hover {
   transform: scale(1.05);
-  /* Slightly enlarges the div on hover */
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-  /* Adds shadow for depth */
 }
 
 .borderdiv img {
   width: 70%;
-  height: 200px;
+  height: auto;
+  min-height: 150px;
+  max-width: 250px;
   object-fit: contain;
   transition: opacity 0.3s ease;
 }
 
 .borderdiv:hover img {
   opacity: 0.9;
+}
+
+
+/* Media queries for responsive adjustments */
+@media (max-width: 992px) {
+  .borderdiv {
+    padding: 12px;
+    min-height: 140px;
+    /* Slightly reduced padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .borderdiv {
+    padding: 10px;
+    min-height: 130px;
+    /* More reduced padding for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .borderdiv {
+    padding: 8px;
+    min-height: 120px;
+    /* Minimal padding for extra small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .borderdiv {
+    padding: 8px;
+    min-height: 120px;
+    /* Minimal padding for extra small screens */
+  }
 }
 
 
