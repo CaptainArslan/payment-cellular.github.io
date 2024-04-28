@@ -1,3 +1,4 @@
+index-bkp.html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +46,8 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
-    <nav class="navbar navbar-expand-lg navbar-light container-fluid py-3">
+
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid py-3 position-fixed ">
         <div class="container">
             <!-- main logo -->
             <a class="navbar-brand" href="javascript:void(0)"><img src="images/main-logo.png" alt="logo"></a>
@@ -105,8 +107,8 @@
         <div class="container py-5 mt-5">
             <div class="row align-items-center py-5 mt-5">
                 <div class="col-md-6 mb-5 mb-md-0 gap">
-                    <h2 class="display-4 fw-bold">Join The Millions</h2>
-                    <h2 class="display-4 fw-bold text-white">Paying Smarter</h2>
+                    <h2 class="display-6 display-md-4 display-lg-3 display-xl-2 fw-bold">Join The Millions</h2>
+                    <h2 class="display-6 display-md-4 display-lg-3 display-xl-2 fw-bold text-white">Paying Smarter</h2>
                     <p class="text-white">No more delays, Pay your bills securely in 30 seconds with 24/7 mobile
                         payments always at your fingertips.</p>
                 </div>
@@ -117,8 +119,7 @@
         </div>
     </section>
 
-
-    <section class="services gap">
+    <section class="services">
         <div class="container">
             <h2 class="fw-bold display-4 mb-4 text-black text-center">Choose Your Carrier</h2>
             <div class="brands">
@@ -243,7 +244,7 @@
         </div>
     </section>
 
-    <section class="tracking gap">
+    <section class="tracking">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-5 mb-md-0 p-5">
@@ -568,13 +569,16 @@
         document.addEventListener('DOMContentLoaded', function () {
             var dropdown = document.querySelector('.dropdown');
             var dropdownMenu = new bootstrap.Dropdown(dropdown.querySelector('.dropdown-toggle'));
+
             dropdown.addEventListener('mouseenter', function () {
                 dropdownMenu.show();
             });
+
             dropdown.addEventListener('mouseleave', function () {
                 dropdownMenu.hide();
             });
         });
+
     </script>
 
 

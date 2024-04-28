@@ -138,7 +138,7 @@ a {
   border: none;
   transition: 0.7s all;
   -webkit-transition: 0.7s all;
-  border-radius: 8px;
+  border-radius: 25px;
 }
 
 .btn-primary:hover {
@@ -522,8 +522,6 @@ section#cta {
   }
 }
 
-
-
 /*--------------------------------------------------------------
   Blog page style
   --------------------------------------------------------------*/
@@ -535,12 +533,8 @@ section#cta {
 
 /* Hero section */
 .hero {
-  /* background: url(images/banner-img.png); */
-  background: url('images/homepage/hero-section-1.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 925px;
+  background: url('images/homepage/hero-section-1.png') no-repeat center center/cover;
+  width: 100%;
 }
 
 .hero .text-primary {
@@ -548,13 +542,9 @@ section#cta {
 }
 
 /* tracking */
-
 .tracking {
-  margin: 125px 0;
+  /* margin: 125px 0; */
   background-image: url('images/homepage/tracking-background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .tracking img {
@@ -570,11 +560,7 @@ section#cta {
   margin-bottom: 20px;
 }
 
-.tracking button{
-  border-radius: 50px;
-}
-
-.tracking button:hover{
+.tracking button:hover {
   background: var(--accent-color);
   color: var(--bs-light);
 }
@@ -640,10 +626,20 @@ section#cta {
   height: 200px;
   object-fit: contain;
   transition: opacity 0.3s ease;
-  /* Smooth transition for the image opacity */
 }
 
 .borderdiv:hover img {
   opacity: 0.9;
-  /* Slightly reduces the image opacity on hover */
+}
+
+
+.custom-border {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.custom-accordion {
+  border-radius: 15px;
+  border: 1px solid var(--accent-color);
+  overflow: hidden;
 }
