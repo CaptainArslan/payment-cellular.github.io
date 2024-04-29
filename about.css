@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------
+Hero Section
+--------------------------------------------------------------*/
+.about {
+    background-image: url('/images/about-us/aboutusherowithimage.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+.recharge {
+    padding: 100px 0;
+}
+
+.recharge img {
+    width: 100%;
+}
+
+.how-it-works {
+    padding: 100px 0;
+}
+
+
+.benefits-section {
+    background-image: url('images/homepage/home-page-3-benefits.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    color: white;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.benefit-item {
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    min-height: 200px;
+    text-align: left;
+}
+
+.benefit-icon {
+    width: 80px;    
+    height: 80px;
+}
+
+.benefit-icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments for fewer columns on smaller screens */
+@media (max-width: 992px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        /* One column on small screens */
+    }
+}
+
+
+
+.process-card img {
+    max-width: 100px; /* Control the size of the icons */
+}
+
+.arrow-image {
+    max-width: 100px; /* Smaller size */
+    transform: rotate(0deg); /* Rotates the image 90 degrees clockwise */
+}
+
+
+@media (max-width: 992px) {
+    .process-card {
+        text-align: center; /* Center content on smaller screens */
+    }
+    .process-card img {
+        margin-bottom: 20px; /* Additional spacing below images on smaller screens */
+    }
+    .process-card h3, .process-card p {
+        padding: 0 15px; /* Padding to avoid text sticking to edges */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-2, .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-lg-2 {
+        margin: 20px 0; /* Add more vertical spacing between the arrow and other content on small screens */
+    }
+    .arrow-image {
+        transform: rotate(90deg); /* Optional: reset rotation on smaller screens if needed */
+    }
+}
