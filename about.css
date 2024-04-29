@@ -1,6 +1,7 @@
-/*--------------------------------------------------------------
-Hero Section
---------------------------------------------------------------*/
+/* General Style Settings */
+/*--------------------------------------------------------------*/
+
+/* Hero Section */
 .about {
     background-image: url('/images/about-us/aboutusherowithimage.png');
     background-size: cover;
@@ -9,6 +10,12 @@ Hero Section
     padding: 200px 0;
 }
 
+/* How It Works Section */
+.how-it-works {
+    padding: 100px 0;
+}
+
+/* Recharge Section */
 .recharge {
     padding: 100px 0;
 }
@@ -17,11 +24,7 @@ Hero Section
     width: 100%;
 }
 
-.how-it-works {
-    padding: 100px 0;
-}
-
-
+/* Benefits Section */
 .benefits-section {
     background-image: url('images/homepage/home-page-3-benefits.png');
     background-size: cover;
@@ -32,7 +35,8 @@ Hero Section
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* Default to 2 columns */
     gap: 10px;
 }
 
@@ -45,8 +49,9 @@ Hero Section
 }
 
 .benefit-icon {
-    width: 80px;    
+    width: 80px;
     height: 80px;
+    margin-bottom: 10px;
 }
 
 .benefit-icon img {
@@ -54,54 +59,71 @@ Hero Section
     height: auto;
 }
 
-/* Responsive adjustments for fewer columns on smaller screens */
+/* Process Section */
+.process-card img {
+    max-width: 100px;
+    /* Control the size of the icons */
+}
+
+.arrow-image {
+    max-width: 100px;
+    /* Smaller size */
+    transform: rotate(0deg);
+    /* Starts without rotation */
+}
+
+/* Responsive Adjustments */
+/*--------------------------------------------------------------*/
 @media (max-width: 992px) {
     .benefits-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns on large screens */
+    }
+
+    .process-card {
+        text-align: center;
+        /* Center content on smaller screens */
+    }
+
+    .process-card img {
+        margin-bottom: 20px;
+        /* Additional spacing below images on smaller screens */
+    }
+
+    .process-card h3,
+    .process-card p {
+        padding: 0 15px;
+        /* Padding to avoid text sticking to edges */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .col-lg-2,
+    .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-lg-2 {
+        margin: 20px 0;
+        /* Add more vertical spacing between the arrow and other content on small screens */
+    }
+
+    .arrow-image {
+        transform: rotate(90deg);
+        /* Rotates the arrow 90 degrees on smaller screens */
+    }
+
+    .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns on medium screens */
+        /* 2 columns on medium screens */
     }
 }
 
 @media (max-width: 576px) {
     .benefits-grid {
         grid-template-columns: 1fr;
-        /* One column on small screens */
-    }
-}
-
-
-
-.process-card img {
-    max-width: 100px; /* Control the size of the icons */
-}
-
-.arrow-image {
-    max-width: 100px; /* Smaller size */
-    transform: rotate(0deg); /* Rotates the image 90 degrees clockwise */
-}
-
-
-@media (max-width: 992px) {
-    .process-card {
-        text-align: center; /* Center content on smaller screens */
-    }
-    .process-card img {
-        margin-bottom: 20px; /* Additional spacing below images on smaller screens */
-    }
-    .process-card h3, .process-card p {
-        padding: 0 15px; /* Padding to avoid text sticking to edges */
-    }
-}
-
-@media (max-width: 768px) {
-    .col-lg-2, .col-lg-5 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .col-lg-2 {
-        margin: 20px 0; /* Add more vertical spacing between the arrow and other content on small screens */
-    }
-    .arrow-image {
-        transform: rotate(90deg); /* Optional: reset rotation on smaller screens if needed */
+        /* 1 column on small screens */
     }
 }
