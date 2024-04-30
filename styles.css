@@ -399,7 +399,8 @@ form.hero-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Ensures all are the same height */
+  height: 100%;
+  /* Ensures all are the same height */
 }
 
 .benefits .icon img {
@@ -425,17 +426,33 @@ form.hero-form {
   overflow: hidden;
 }
 
-.custom-input {
+/* .custom-input {
   padding: 10px 12px;
   border-radius: 1.5rem;
   border: 1px solid #ccc;
   height: calc(1.5em + 1.2rem + 2px);
+} */
+.custom-input {
+  width: 100%;
+  /* Ensures full width on small screens */
+  padding: 0.375rem 0.75rem;
+  /* Comfortable padding */
+  border-radius: 0.25rem;
+  /* Consistent border-radius */
 }
+
+
+/* .login-modal form,
+.signup-modal form {
+  text-align: left;
+  padding: 10px 50px 10px 50px;
+} */
 
 .login-modal form,
 .signup-modal form {
   text-align: left;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 30px;
+  /* Default padding for larger screens */
 }
 
 
@@ -472,6 +489,12 @@ form.hero-form {
   .border-div img {
     min-height: 110px;
   }
+
+  .login-modal form,
+  .signup-modal form {
+    padding: 10px 10px;
+    /* Even more reduced side padding for small screens */
+  }
 }
 
 @media (max-width: 320px) {
@@ -488,9 +511,23 @@ form.hero-form {
   .navbar .nav-item {
     width: 100%;
     text-align: center;
+    color: #fff;
   }
 
   .border-div img {
     min-height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 90%;
+    /* Make the modal narrower on small devices */
+  }
+
+  .login-modal form,
+  .signup-modal form {
+    padding: 10px 20px;
+    /* Reduced side padding for medium screens */
   }
 }
