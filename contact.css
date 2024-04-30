@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------
+Hero Section
+--------------------------------------------------------------*/
+.contact {
+    background: url('images/homepage/contact-us-hero.png') no-repeat top center/cover;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
