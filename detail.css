@@ -4,11 +4,27 @@
     background-position: right;
     background-repeat: no-repeat;
     padding: 200px 0;
-    border-left: 300px;
-    border-right: 150px;
+    position: relative;
 }
 
-.details input.form-control {
+.form input.form-control {
     padding: 1rem;
     border-radius: 2rem;
+}
+
+.form input[type="text"] {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form input[type="text"]:hover {
+    border-color: var(--accent-color);
+}
+
+.form input[type="text"]:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
 }
