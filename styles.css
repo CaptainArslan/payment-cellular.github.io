@@ -427,12 +427,12 @@ form.hero-form {
   overflow: hidden;
 }
 
-/* .custom-input {
+ .custom-input {
   padding: 10px 12px;
   border-radius: 1.5rem;
   border: 1px solid #ccc;
   height: calc(1.5em + 1.2rem + 2px);
-} */
+} 
 .custom-input {
   width: 100%;
   /* Ensures full width on small screens */
