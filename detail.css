@@ -1,0 +1,14 @@
+.details {
+    /* background-image: url('/images/about-us/aboutusherowithimage.png'); */
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+    border-left: 300px;
+    border-right: 150px;
+}
+
+.details input.form-control {
+    padding: 1rem;
+    border-radius: 2rem;
+}
