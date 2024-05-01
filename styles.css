@@ -14,6 +14,7 @@ html {
 
 body {
   /* --heading-font: 'Roboto Condensed', sans-serif; */
+  background-color: #FFFFFF;
   --heading-font: 'Poppins', sans-serif;
   --heading-font-weight: 700;
   --heading-color: #313131;
@@ -516,18 +517,5 @@ form.hero-form {
 
   .border-div img {
     min-height: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-dialog {
-    max-width: 90%;
-    /* Make the modal narrower on small devices */
-  }
-
-  .login-modal form,
-  .signup-modal form {
-    padding: 10px 20px;
-    /* Reduced side padding for medium screens */
   }
 }
