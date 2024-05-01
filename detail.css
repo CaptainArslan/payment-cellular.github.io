@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.cards .card .border-primary{
+    border: 1px solid var(--accent-color);
+}
+
 .form input.form-control {
     padding: 1rem;
     border-radius: 2rem;
@@ -27,4 +31,35 @@
 .form input[type="text"]:focus {
     border-color: var(--accent-color);
     box-shadow: 0 0 5px var(--accent-color);
+}
+
+.card .card-title {
+    color: var(--accent-color);
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px var(--accent-color);
+    /* Adds subtle shadow */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px var(--accent-color);
+    /* Darker shadow on hover for emphasis */
+}
+
+.card-body {
+    flex: 1;
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+    margin-left: -1rem;
+}
+
+.card-text {
+    margin-top: auto;
 }
