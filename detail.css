@@ -1,5 +1,3 @@
-
-
 .details {
     /* background-image: url('/images/about-us/aboutusherowithimage.png'); */
     background-size: cover;
@@ -9,46 +7,101 @@
     position: relative;
 }
 
-.header{
+.header {
     position: relative;
-    height: 465px;
-    background-image: linear-gradient(#9BD300, #9BD300);
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      0 calc(100% - 5vw)
-    );
-    
-  }
-  @media only screen and (max-width: 768px){
-    .header{
-         position: relative;
-    height: 465px;
-    background-image: linear-gradient(#9BD300, #9BD300);
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      0 calc(100% - 5vw)
-    );
+    min-height: 500px;
+    /* Adapt height for desktop */
+    background-color: var(--accent-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+}
+
+.service-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -230px;
+    /* Start with a large negative margin for desktop */
+    background: transparent;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    /* Smooth transition for all changes */
+}
+
+/* Adjustments for Tablets */
+@media (max-width: 992px) {
+    .header {
+        min-height: 400px;
+        /* Smaller height for tablet devices */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
     }
-  }
-  .contain {
-    background-image: url('E:/payment-celluar.github/payment-cellular.github.io/images/bdet.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire container with the background image */
-    background-position: center; /* Center the background image */
-    height: 320px; /* Set the height of the container */
-    margin-left: 4in;
-    padding-left: 2px;
-    margin-right: 6.4in;
-    padding-top: 15px;
-    border-radius: 30px;
-    
-  }
-  
-  
-.cards .card .border-primary{
+
+    .service-section {
+        margin-top: -150px;
+        /* Less negative margin for tablets */
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .header {
+        min-height: 300px;
+        /* Smaller header for mobile */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    }
+
+    .service-section {
+        margin-top: -100px;
+        /* Even less negative margin for mobile */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+        /* Smaller border radius for a subtler effect */
+    }
+
+    .col-4 {
+        flex: 0 0 100%;
+        /* Full width for small screens */
+        max-width: 100%;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+    .header {
+        min-height: 250px;
+        /* Even smaller header for very small devices */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    }
+
+    .service-section {
+        margin-top: -70px;
+        /* Minimal overlap on very small devices */
+        padding: 10px;
+        /* Smaller padding */
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+        /* Very light shadow */
+        border-radius: 0.5rem;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .header {
+        min-height: 600px;
+        /* Larger header for big screens */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+    }
+
+    .service-section {
+        margin-top: -250px;
+        /* Larger negative margin for bigger impact on larger screens */
+        box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.6);
+        border-radius: 3rem;
+    }
+}
+
+
+.cards .card .border-primary {
     border: 1px solid var(--accent-color);
 }
 
@@ -82,14 +135,11 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px var(--accent-color);
-    /* Adds subtle shadow */
     transition: box-shadow 0.3s ease-in-out;
-    /* Smooth transition for hover effect */
 }
 
 .card:hover {
     box-shadow: 0 8px 16px var(--accent-color);
-    /* Darker shadow on hover for emphasis */
 }
 
 .card-body {
@@ -103,14 +153,4 @@
 
 .card-text {
     margin-top: auto;
-}
-.desktop-only {
-    display: block; /* By default, display the div */
-}
-
-/* Media query for screens smaller than 768px (typical mobile devices) */
-@media only screen and (max-width: 768px) {
-    .desktop-only {
-        display: none; /* Hide the div on mobile screens */
-    }
 }
