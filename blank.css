@@ -1,0 +1,18 @@
+.hero-section {
+    background-color: #f0f0f0;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-image {
+    width: 300px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.hero-title {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.text-section {
+    padding: 50px 0;
+    text-align: center;
+}
