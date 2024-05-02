@@ -68,15 +68,17 @@
 /* Very Small Devices */
 @media (max-width: 480px) {
     .header {
-        min-height: 250px;
+        min-height: 350px;
         /* Even smaller header for very small devices */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
 
     .service-section {
-        margin-top: -70px;
+        margin-top: -110px;
         /* Minimal overlap on very small devices */
+      font-size: medium;
         padding: 10px;
+       
         /* Smaller padding */
         box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
         /* Very light shadow */
