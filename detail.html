@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cellular payment</title>
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="icon" type="image/png" href="images/main-logo.png">
+
+  <!--Bootstrap ================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="detail.css">
+  <!-- <link rel="stylesheet" href="style.scss"> -->
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+  <nav class="navbar navbar-expand-lg navbar-light container-fluid py-3">
+    <div class="container">
+      <!-- main logo -->
+      <a class="navbar-brand" href="javascript:void(0)"><img src="images/main-logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link  active px-3" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link px-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Top up
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                      <a href="detail.html" class="dropdown-item">
+                          <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg" class="dropdown-img" alt="Blog">
+                          Blog
+                      </a>
+                      
+                  </li>
+                  <li>
+                      <a href="detail.html" class="dropdown-item">
+                          <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
+                              class="dropdown-img" alt="Blog Single">
+                          Blog-Single</a>
+                  </li>
+                  <li>
+                      <a href="detail.html" class="dropdown-item">
+                          <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
+                              class="dropdown-img" alt="Booking"> Booking</a>
+                  </li>
+                  <li>
+                      <a href="detail.html" class="dropdown-item">
+                          <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
+                              class="dropdown-img" alt="Services"> Services</a>
+                  </li>
+              </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#sigin">Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#sigUp">Sign
+                up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 btn btn-primary" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 mb-5 mb-md-0 text-center">
+          <p class="text-white display-5" style="margin-top: 1in;">Seamless Refill Solutions.</p>
+          <h2 class="display-4 fw-bold text-white">4 Easy Steps, Available 24/7</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-detail">
+    <div class="container">
+      <div class="row justify-content-center p-4">
+        <div class="col-12 col-md-8 col-lg-4 p-3 service-section">
+          <img src="images/details.png" alt="Placeholder Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Carrier form -->
+  <section class="gap form p-3">
+    <div class="mt-5">
+      <h3 class="text-black text-center w-100">Simple Mobile Recharge</h3>
+      <p class="mb-4 text-center">Prepaid Mobile Bill Pay and Wireless Plan Refill Payments</p>
+      <form action="" method="" class="gap">
+        <div class="container">`
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="mb-3">
+                <label for="text" class="form-label fw-bold">Enter Mobile Number</label>
+                <input type="text" class="form-control" aria-describedby="enter mobile number"
+                  placeholder="Enter Mobile Number (XXX XXXX XXXX)">
+              </div>
+              <div class="mb-3">
+                <label for="text" class="form-label fw-bold">Confirm Mobile Number</label>
+                <input type="text" class="form-control" placeholder="Enter Mobile Number (XXX XXXX XXXX)">
+              </div>
+              <!-- cards -->
+              <div class="cards">
+                <div class="container mt-5">
+                  <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option1" checked>
+                          </div>
+                          <h3 class="fw-bold card-title">$100</h3>
+                          <small class="card-text">Simple Mobile 4 Lines Family $100 Unlimited Everything Plan + 5GB
+                            Hotspot</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option2">
+                          </div>
+                          <h3 class="fw-bold card-title">$75</h3>
+                          <small class="card-text">Unlimited High Speed Data, Talk & Text (Truly Unlimited)
+                            30-Day 2-Line+ Plan </small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option3">
+                          </div>
+                          <h3 class="fw-bold card-title">$60</h3>
+                          <small class="card-text">Unlimited Talk, Text, Intl Text, & Data @ 4G Speeds Unlimited
+                            Includes 15GB Hotspot</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option1">
+                          </div>
+                          <h3 class="fw-bold card-title">$100</h3>
+                          <small class="card-text">Simple Mobile 4 Lines Family $100 Unlimited Everything Plan + 5GB
+                            Hotspot</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option2">
+                          </div>
+                          <h3 class="fw-bold card-title">$75</h3>
+                          <small class="card-text">Unlimited High Speed Data, Talk & Text (Truly Unlimited)
+                            30-Day 2-Line+ Plan </small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option3">
+                          </div>
+                          <h3 class="fw-bold card-title">$60</h3>
+                          <small class="card-text">Unlimited Talk, Text, Intl Text, & Data @ 4G Speeds Unlimited
+                            Includes 15GB Hotspot</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option1">
+                          </div>
+                          <h3 class="fw-bold card-title">$100</h3>
+                          <small class="card-text">Simple Mobile 4 Lines Family $100 Unlimited Everything Plan + 5GB
+                            Hotspot</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option2">
+                          </div>
+                          <h3 class="fw-bold card-title">$75</h3>
+                          <small class="card-text">Unlimited High Speed Data, Talk & Text (Truly Unlimited)
+                            30-Day 2-Line+ Plan </small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4">
+                      <div class="card w-100">
+                        <div class="card-body text-center">
+                          <div class="form-check text-start ms-3 mt-2">
+                            <input class="form-check-input" type="radio" name="option" id="option3">
+                          </div>
+                          <h3 class="fw-bold card-title">$60</h3>
+                          <small class="card-text">Unlimited Talk, Text, Intl Text, & Data @ 4G Speeds Unlimited
+                            Includes 15GB Hotspot</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center mt-4">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                  <button type="button" class="btn btn-primary w-100">Pay Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class=" faq gap">
+    <div class="container my-5 pb-5 ">
+      <h2 class="text-center text-black fw-bold display-4 mb-5">Frequently asked questions</h2>
+      <div class="accordion col-md-8 offset-md-2" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item custom-accordion mt-3">
+          <h5 class="accordion-header border-0" id="panelsStayOpen-headingOne">
+            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              Will you give us guarantee after roofing?
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a.
+                Tristique ultricies consectetu at.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item custom-accordion mt-3">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              Is there any color options for my roofing?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a.
+                Tristique ultricies consectetu at.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item custom-accordion mt-3">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              What is the cost for just repairing?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a.
+                Tristique ultricies consectetu at.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item custom-accordion mt-3">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour">
+              What time will it take to finish my roofing?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a.
+                Tristique ultricies consectetu at.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container footer-container mt-5 pt-3">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+        <div class=" col-md-4 mt-5 mt-md-0 ">
+          <img src="images/main-logo.png" alt="image" class="my-3">
+          <p class="text-white">Secure, instant and reliable mobile top up service that covers the majority
+            wireless
+            carriers in the United States. Mobile recharge at ease.</p>
+          <div class="col-8 mt-5">
+            <div class="security-check row d-flex justify-content-around align-items-center">
+              <img name="trustseal" alt="Trust Badges" class="mb-2"
+                src="https://payyourcell.com/assets/images/frontend/footer/guaranteed-safe-checkout-2.png">
+              <img name="trustseal" alt="Trust Badges" class="mb-2"
+                src="https://payyourcell.com/assets/images/frontend/footer/ssl-trust-badge-image-for-free.png">
+              <img name="trustseal" alt="Trust Badges" class="mb-2"
+                src="https://payyourcell.com/assets/images/frontend/footer/trust-seal-aes-256-bit-ssl.png">
+              <img name="trustseal" alt="Trust Badges" class="mb-2"
+                src="https://payyourcell.com/assets/images/frontend/footer/satisisfaction-guaranteed-badge-icon.png">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 offset-md-1">
+          <h5 class="py-3 text-white">Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-2"><a href="#" class="nav-link fw-normal p-0 "> Contact us</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> About us </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Blog </a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 ">
+          <h5 class="py-3 text-white">Legal & Policies</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our locations </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> About us </a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our gallery </a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 ">
+          <h5 class="py-3 text-white">Contact Info</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item d-flex mb-3">
+              <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon><a href="#" class="nav-link p-0 ">
+                (+832) 356 2697 </a>
+            </li>
+            <li class="nav-item d-flex mb-3">
+              <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon><a href="#" class="nav-link p-0 ">
+                support@payyourcell.com </a>
+            </li>
+            <li class="nav-item d-flex mb-3">
+              <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
+              <a href="#" class="nav-link p-0 "> 4750 Aldine Mail RTE, STE C1 -Houston - TX - 77039 </a>
+            </li>
+          </ul>
+          <div class="row">
+            <img src="https://payyourcell.com/assets/images/frontend/footer/cc.png" width="auto" height="60"
+              alt="We accept all major credit/debit cards">
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-2 pt-4">
+          <p>© 2023. All rights reserved</p>
+        </footer>
+      </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade login-modal" id="sigin" tabindex="-1" aria-labelledby="siginLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex justify-content-end p-2">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4 pb-5">
+          <h3 class="modal-title text-black text-center w-100" id="siginLabel">Login</h3>
+          <p class="mb-4 text-center">Enter your credentials to login</p>
+          <form action="" method="">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Email address</label>
+                    <input type="email" class="form-control custom-input" id="email" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label fw-bold">Password</label>
+                    <input type="password" class="form-control custom-input" id="password" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="row align-items-center justify-content-between">
+                      <div class="col-auto form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                      </div>
+                      <div class="col-auto">
+                        <a href="#" class="text-danger fw-bold" style="text-decoration: none;">Forgot password?</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gap">
+                    <button type="button" class="btn btn-primary bg-secondary w-100">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade signup-modal" id="sigUp" tabindex="-1" aria-labelledby="sigUpLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex justify-content-end p-2">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4 pb-5">
+          <h3 class="modal-title text-black text-center w-100" id="sigUpLabel">Sign Up</h3>
+          <p class="mb-4 text-center">Enter your information to sign up</p>
+          <form action="" method="">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="mb-3">
+                    <label for="firstName" class="form-label fw-bold">First Name</label>
+                    <input type="text" class="form-control custom-input" id="firstName" placeholder="Enter first name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label fw-bold">Last Name</label>
+                    <input type="text" class="form-control custom-input" id="lastName" placeholder="Enter last name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="username" class="form-label fw-bold">Username</label>
+                    <input type="text" class="form-control custom-input" id="username" placeholder="Enter username">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                    <input type="tel" class="form-control custom-input" id="phoneNumber"
+                      placeholder="Enter phone number">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Email address</label>
+                    <input type="email" class="form-control custom-input" id="email" placeholder="Enter email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label fw-bold">Password</label>
+                    <input type="password" class="form-control custom-input" id="password" placeholder="Enter password">
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label fw-bold">Confirm Password</label>
+                    <input type="password" class="form-control custom-input" id="confirmPassword"
+                      placeholder="Confirm password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <!-- Checkbox for the agreement -->
+                      <input type="checkbox" class="form-check-input" id="termsAgree" required>
+                      <label class="form-check-label" for="termsAgree">
+                        I accept the <a href="URL_TO_REFUNDS" target="_blank" rel="noopener noreferrer">Refunds</a>,
+                        <a href="URL_TO_TERMS" target="_blank" rel="noopener noreferrer">Terms
+                          and Policy</a>, and
+                        <a href="URL_TO_PRIVACY_POLICY" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="gap">
+                    <button type="button" class="btn btn-primary bg-secondary w-100">Sign
+                      Up</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- script ================================================== -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdown = document.querySelector('.dropdown');
+      var dropdownMenu = new bootstrap.Dropdown(dropdown.querySelector('.dropdown-toggle'));
+      dropdown.addEventListener('mouseenter', function () {
+        dropdownMenu.show();
+      });
+      dropdown.addEventListener('mouseleave', function () {
+        dropdownMenu.hide();
+      });
+    });
+  </script> -->
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', function () {
+        document.querySelectorAll('.card').forEach(c => {
+          c.classList.remove('border-primary'); // Remove the border from all cards
+        });
+        card.classList.add('border-primary'); // Add a border to the clicked card
+        card.querySelector('.form-check-input').checked = true; // Check the radio inside the clicked card
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -127,12 +127,10 @@
                             <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                         </div>
                         <div class="form-group mb-4">
-                            <input type="text" class="form-control" id="phone" name="phone"
-                                placeholder="Enter phone number">
+                            <input type="text" class="form-control" id="phone" name="phone"  placeholder="Enter phone number">
                         </div>
                         <div class="form-group mb-4">
-                            <input type="text" class="form-control" id="message" name="message"
-                                placeholder="How did you find us?">
+                            <input type="text" class="form-control" id="message" name="message"  placeholder="How did you find us?">
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="col-12 col-sm-8 col-md-7">
@@ -181,7 +179,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="faq gap">
         <div class="container my-5 pb-5 ">
@@ -331,133 +328,6 @@
             </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade login-modal" id="sigin" tabindex="-1" aria-labelledby="siginLabel" aria-hidden="true"
-        data-bs-backdrop="static">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="d-flex justify-content-end p-2"> <!-- Ensures padding and right alignment -->
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pt-4 pb-5">
-                    <h3 class="modal-title text-black text-center w-100" id="siginLabel">Login</h3>
-                    <p class="mb-4 text-center">Enter your credentials to login</p>
-                    <form action="" method="">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-10">
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label fw-bold">Email address</label>
-                                        <input type="email" class="form-control custom-input" id="email"
-                                            placeholder="Enter email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="password" class="form-label fw-bold">Password</label>
-                                        <input type="password" class="form-control custom-input" id="password"
-                                            placeholder="Password">
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="row align-items-center justify-content-between">
-                                            <div class="col-auto form-check">
-                                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                                <label class="form-check-label" for="rememberMe">Remember me</label>
-                                            </div>
-                                            <div class="col-auto">
-                                                <a href="#" class="text-danger fw-bold"
-                                                    style="text-decoration: none;">Forgot
-                                                    password?</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gap">
-                                        <button type="button" class="btn btn-primary bg-secondary w-100">Login</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade signup-modal" id="sigUp" tabindex="-1" aria-labelledby="sigUpLabel" aria-hidden="true"
-        data-bs-backdrop="static">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="d-flex justify-content-end p-2">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pt-4 pb-5">
-                    <h3 class="modal-title text-black text-center w-100" id="sigUpLabel">Sign Up</h3>
-                    <p class="mb-4 text-center">Enter your information to sign up</p>
-                    <form action="" method="">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-10">
-                                    <div class="mb-3">
-                                        <label for="firstName" class="form-label fw-bold">First Name</label>
-                                        <input type="text" class="form-control custom-input" id="firstName"
-                                            placeholder="Enter first name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="lastName" class="form-label fw-bold">Last Name</label>
-                                        <input type="text" class="form-control custom-input" id="lastName"
-                                            placeholder="Enter last name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="username" class="form-label fw-bold">Username</label>
-                                        <input type="text" class="form-control custom-input" id="username"
-                                            placeholder="Enter username">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
-                                        <input type="tel" class="form-control custom-input" id="phoneNumber"
-                                            placeholder="Enter phone number">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label fw-bold">Email address</label>
-                                        <input type="email" class="form-control custom-input" id="email"
-                                            placeholder="Enter email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="password" class="form-label fw-bold">Password</label>
-                                        <input type="password" class="form-control custom-input" id="password"
-                                            placeholder="Enter password">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="confirmPassword" class="form-label fw-bold">Confirm Password</label>
-                                        <input type="password" class="form-control custom-input" id="confirmPassword"
-                                            placeholder="Confirm password">
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <!-- Checkbox for the agreement -->
-                                            <input type="checkbox" class="form-check-input" id="termsAgree" required>
-                                            <label class="form-check-label" for="termsAgree">
-                                                I accept the <a href="URL_TO_REFUNDS" target="_blank"
-                                                    rel="noopener noreferrer">Refunds</a>,
-                                                <a href="URL_TO_TERMS" target="_blank" rel="noopener noreferrer">Terms
-                                                    and Policy</a>, and
-                                                <a href="URL_TO_PRIVACY_POLICY" target="_blank"
-                                                    rel="noopener noreferrer">Privacy Policy</a>.
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="gap">
-                                        <button type="button" class="btn btn-primary bg-secondary w-100">Sign
-                                            Up</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- script ================================================== -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
@@ -467,18 +337,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var dropdown = document.querySelector('.dropdown');
-            var dropdownMenu = new bootstrap.Dropdown(dropdown.querySelector('.dropdown-toggle'));
-            dropdown.addEventListener('mouseenter', function () {
-                dropdownMenu.show();
-            });
-            dropdown.addEventListener('mouseleave', function () {
-                dropdownMenu.hide();
-            });
-        });
-    </script>
 </body>
 
 </html>
