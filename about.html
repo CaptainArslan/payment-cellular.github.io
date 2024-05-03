@@ -192,8 +192,6 @@
             </div>
         </div>
     </section>
-    
-
 
     <!-- how it works -->
     <section class="gap how-it-works">
@@ -401,7 +399,7 @@
         data-bs-backdrop="static">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
-                <div class="d-flex justify-content-end p-2"> <!-- Ensures padding and right alignment -->
+                <div class="d-flex justify-content-end p-2">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-4 pb-5">
@@ -429,8 +427,7 @@
                                             </div>
                                             <div class="col-auto">
                                                 <a href="#" class="text-danger fw-bold"
-                                                    style="text-decoration: none;">Forgot
-                                                    password?</a>
+                                                    style="text-decoration: none;">Forgot password?</a>
                                             </div>
                                         </div>
                                     </div>
@@ -477,7 +474,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
-                                        <input type="tel" class="form-control custom-input" id="phoneNumber"
+                                        <input type="number" class="form-control custom-input" id="phoneNumber"
                                             placeholder="Enter phone number">
                                     </div>
                                     <div class="mb-3">
@@ -500,12 +497,12 @@
                                             <!-- Checkbox for the agreement -->
                                             <input type="checkbox" class="form-check-input" id="termsAgree" required>
                                             <label class="form-check-label" for="termsAgree">
-                                                I accept the <a href="URL_TO_REFUNDS" target="_blank"
+                                                I accept the <a href="javascript:void(0)"
                                                     rel="noopener noreferrer">Refunds</a>,
-                                                <a href="URL_TO_TERMS" target="_blank" rel="noopener noreferrer">Terms
+                                                <a href="javascript:void(0)" rel="noopener noreferrer">Terms
                                                     and Policy</a>, and
-                                                <a href="URL_TO_PRIVACY_POLICY" target="_blank"
-                                                    rel="noopener noreferrer">Privacy Policy</a>.
+                                                <a href="javascript:void(0)" rel="noopener noreferrer">Privacy
+                                                    Policy</a>.
                                             </label>
                                         </div>
                                     </div>
@@ -532,20 +529,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var dropdown = document.querySelector('.dropdown');
-            var dropdownMenu = new bootstrap.Dropdown(dropdown.querySelector('.dropdown-toggle'));
-            dropdown.addEventListener('mouseenter', function () {
-                dropdownMenu.show();
-            });
-            dropdown.addEventListener('mouseleave', function () {
-                dropdownMenu.hide();
-            });
-        });
-    </script>
-
-
 </body>
 
 </html>
