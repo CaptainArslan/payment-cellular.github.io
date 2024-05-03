@@ -6,6 +6,7 @@
     <title>Cellular payment</title>
     <!--vendor css ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -21,6 +22,7 @@
     <!-- Style Sheet ================================================== -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="blank.css">
+    <link rel="stylesheet" type="text/css" href="Checkout.css">
 
     <!-- Google Fonts ================================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,23 +69,25 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li>
-                                <a href="#" class="dropdown-item">
-                                    <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
-                                        class="dropdown-img" alt="Blog"> Blog</a>
+                                <a href="detail.html" class="dropdown-item">
+                                    <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg" class="dropdown-img" alt="Blog">
+                                    Blog
+                                </a>
+                                
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">
+                                <a href="detail.html" class="dropdown-item">
                                     <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
                                         class="dropdown-img" alt="Blog Single">
                                     Blog-Single</a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">
+                                <a href="detail.html" class="dropdown-item">
                                     <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
                                         class="dropdown-img" alt="Booking"> Booking</a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">
+                                <a href="detail.html" class="dropdown-item">
                                     <img src="https://payyourcell.com/assets/images/services/1690316149-home.jpg"
                                         class="dropdown-img" alt="Services"> Services</a>
                             </li>
@@ -105,18 +109,70 @@
         </div>
     </div>
 </nav>
-<div class="backgroundimgherosection">
-    <img src=
-"E:\payment-celluar.github\payment-cellular.github.io\images\copyrightherosection.png"
-        style="width: 100%; height: 100%;">
-    <div class="text-container">
-        <h3 style="color: white;">Digital Millennium Copyright Act (DMCA) Compliance</h3>
+<h1 class="checkoutheading">Check Out</h1>
+<h3 class="checkoutheading" style="background-color: white;">I CONFIRM THE PHONE NUMBER BELOW IS CORRECT. ALL SALES ARE FINAL</h3>
+<h1 class="checkoutheroheading3" style="text-align: left; background-color: white; ">Billing Detail</h1>
+<!-- Carrier form -->
+<section class="gap form">
+    <div class="pt-4 pb-5">
+      <form action="" method="">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-5"> <!-- Adjust column width as needed -->
+              <div class="mb-3">
+                <label for="text" class="form-label fw-bold">First name</label>
+                <input type="text" class="form-control" aria-describedby="enter mobile number" placeholder="e.g John">
+              </div>
+            </div>
+            <div class="col-md-5"> <!-- Adjust column width as needed -->
+              <div class="mb-3">
+                <label for="text" class="form-label fw-bold">Last name</label>
+                <input type="text" class="form-control" placeholder="e.g Doe">
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="mb-3">
+                <label for="text" class="form-label fw-bold">Mobile Number</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Mobile Number (XXX XXXX XXXX)">
+              </div>
+              <div class="mb-3">
+                <label for="text" class="form-label fw-bold">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+              </div>
+              <h1 class="checkoutheroheading4" style="text-align: left;  ">Payment Detail</h1>
+              <h1 class="checkoutheroheading4" style="text-align: left; color: #FF9800; ">Please stay on the page untill the payment is completed or redirect back. Otherwise data will lose. Thanks</h1>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
+  </section>
+  <!-- Payment methods section -->
+<div>
+    <a href="index.html">
+        <img class="paypalicon" src="E:\payment-celluar.github\payment-cellular.github.io\images\paypalicon.svg">
+    </a>
 </div>
-<section class="image-section">
-    <div class="container">  
-    </div>
-</section>
+
+<div>
+    <a href="index.html">
+        <button class="creditcard"><i class="fa fa-credit-card"></i> Debit or Credit Card</button>
+    </a>
+</div>
+<h1 class="checkoutheroheading3" style="text-align: left;  ">Terms and Conditions</h1>
+<p class="checkoutheroheading3" style="padding-top: 0; ">I hereby authorize charges for a total of $14 through my credit/debit card. I undersatnd that the charge on my credit/debit is non-refundable under any circumstances.</p>
+<h1 class="checkoutheroheading3" style="padding-top: 0;padding-bottom: 0;">Service Agreement</h1>
+<p class="checkoutheroheading3" style="padding-top: 0;">I hereby authorize charges for a total of $14 through my credit/debit card. I undersatnd that the charge on my credit/debit is non-refundable under any circumstances.</p>
+  
+  
+  
+ 
+  
+ 
+
+
 <section class="footer">
     <div class="container footer-container mt-5 pt-3">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">

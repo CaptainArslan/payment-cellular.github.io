@@ -16,3 +16,27 @@
     padding: 50px 0;
     text-align: center;
 }
+
+.backgroundimgherosection {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
+.text-container {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 16px;
+}
+  
+
+
+
+
